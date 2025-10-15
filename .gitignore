@@ -1,21 +1,71 @@
+# vendor
+/vendor/
 
-###> symfony/framework-bundle ###
+# Symfony dotenv environment files
 .env
 /.env.local
 /.env.local.php
 /.env.*.local
+/.env.dev
+/.env.test
 /config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+
+# Symfony secrets (optional)
+/config/secrets/*.php
+/config/secrets/*.key
+/config/secrets/*.pub
+
+# Symfony cache, logs, sessions
 /var/
-/vendor/
-###< symfony/framework-bundle ###
 
-###> phpunit/phpunit ###
-/phpunit.xml
-/.phpunit.cache/
-###< phpunit/phpunit ###
-
-###> symfony/asset-mapper ###
+# Public-generated bundles and assets
+/public/bundles/
 /public/assets/
 /assets/vendor/
-###< symfony/asset-mapper ###
+
+# Web server files
+/.idea/
+/.vscode/
+/nbproject/
+
+# Build artifacts
+/node_modules/
+/dist/
+/build/
+/coverage/
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.cache/
+/coverage.xml
+
+# IDE and OS
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# PHPStorm
+/.idea/
+/.idea/**
+
+# Vagrant, Docker
+/.vagrant/
+docker-compose.override.yml
+.env.local.php
+
+# Symfony specific
+/public/? # (if you generate build artifacts there, but keep public/index.php)
+
+/# Ignore user-specific composer auth files
+/auth.json
+
+# Logs and misc
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Generated runtime files
+/runtime/
