@@ -1,0 +1,9 @@
+post_store:
+    path: /posts
+    controller: App\Presentation\Controller\PostController::store
+    methods: [post]
+
+post_index:
+    path: /posts
+    controller: App\Presentation\Controller\PostController::index
+    methods: [get]
